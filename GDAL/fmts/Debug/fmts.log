@@ -1,0 +1,89 @@
+﻿     Creating library C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\GDAL\Debug\fmts.lib and object C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\GDAL\Debug\fmts.exp
+gdalallregister.obj : error LNK2001: unresolved external symbol "protected: virtual int __thiscall OGRLayer::ISetFeature(class OGRFeature *)" (?ISetFeature@OGRLayer@@MAEHPAVOGRFeature@@@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "protected: virtual int __thiscall OGRLayer::ICreateFeature(class OGRFeature *)" (?ICreateFeature@OGRLayer@@MAEHPAVOGRFeature@@@Z)
+gdalallregister.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall OGRLayer::~OGRLayer(void)" (??1OGRLayer@@UAE@XZ) referenced in function "public: virtual void * __thiscall OGRLayer::`vector deleting destructor'(unsigned int)" (??_EOGRLayer@@UAEPAXI@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual class OGRGeometry * __thiscall OGRLayer::GetSpatialFilter(void)" (?GetSpatialFilter@OGRLayer@@UAEPAVOGRGeometry@@XZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetSpatialFilter(class OGRGeometry *)" (?SetSpatialFilter@OGRLayer@@UAEXPAVOGRGeometry@@@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetSpatialFilterRect(double,double,double,double)" (?SetSpatialFilterRect@OGRLayer@@UAEXNNNN@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetSpatialFilter(int,class OGRGeometry *)" (?SetSpatialFilter@OGRLayer@@UAEXHPAVOGRGeometry@@@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetSpatialFilterRect(int,double,double,double,double)" (?SetSpatialFilterRect@OGRLayer@@UAEXHNNNN@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::SetAttributeFilter(char const *)" (?SetAttributeFilter@OGRLayer@@UAEHPBD@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::SetNextByIndex(__int64)" (?SetNextByIndex@OGRLayer@@UAEH_J@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual class OGRFeature * __thiscall OGRLayer::GetFeature(__int64)" (?GetFeature@OGRLayer@@UAEPAVOGRFeature@@_J@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::DeleteFeature(__int64)" (?DeleteFeature@OGRLayer@@UAEH_J@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall OGRLayer::GetName(void)" (?GetName@OGRLayer@@UAEPBDXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual enum OGRwkbGeometryType __thiscall OGRLayer::GetGeomType(void)" (?GetGeomType@OGRLayer@@UAE?AW4OGRwkbGeometryType@@XZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::FindFieldIndex(char const *,int)" (?FindFieldIndex@OGRLayer@@UAEHPBDH@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual class OGRSpatialReference * __thiscall OGRLayer::GetSpatialRef(void)" (?GetSpatialRef@OGRLayer@@UAEPAVOGRSpatialReference@@XZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual __int64 __thiscall OGRLayer::GetFeatureCount(int)" (?GetFeatureCount@OGRLayer@@UAE_JH@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::GetExtent(class OGREnvelope *,int)" (?GetExtent@OGRLayer@@UAEHPAVOGREnvelope@@H@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::GetExtent(int,class OGREnvelope *,int)" (?GetExtent@OGRLayer@@UAEHHPAVOGREnvelope@@H@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::CreateField(class OGRFieldDefn *,int)" (?CreateField@OGRLayer@@UAEHPAVOGRFieldDefn@@H@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::DeleteField(int)" (?DeleteField@OGRLayer@@UAEHH@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::ReorderFields(int *)" (?ReorderFields@OGRLayer@@UAEHPAH@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::AlterFieldDefn(int,class OGRFieldDefn *,int)" (?AlterFieldDefn@OGRLayer@@UAEHHPAVOGRFieldDefn@@H@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::CreateGeomField(class OGRGeomFieldDefn *,int)" (?CreateGeomField@OGRLayer@@UAEHPAVOGRGeomFieldDefn@@H@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::SyncToDisk(void)" (?SyncToDisk@OGRLayer@@UAEHXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual class OGRStyleTable * __thiscall OGRLayer::GetStyleTable(void)" (?GetStyleTable@OGRLayer@@UAEPAVOGRStyleTable@@XZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetStyleTableDirectly(class OGRStyleTable *)" (?SetStyleTableDirectly@OGRLayer@@UAEXPAVOGRStyleTable@@@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall OGRLayer::SetStyleTable(class OGRStyleTable *)" (?SetStyleTable@OGRLayer@@UAEXPAVOGRStyleTable@@@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::StartTransaction(void)" (?StartTransaction@OGRLayer@@UAEHXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::CommitTransaction(void)" (?CommitTransaction@OGRLayer@@UAEHXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::RollbackTransaction(void)" (?RollbackTransaction@OGRLayer@@UAEHXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall OGRLayer::GetFIDColumn(void)" (?GetFIDColumn@OGRLayer@@UAEPBDXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall OGRLayer::GetGeometryColumn(void)" (?GetGeometryColumn@OGRLayer@@UAEPBDXZ)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRLayer::SetIgnoredFields(char const * *)" (?SetIgnoredFields@OGRLayer@@UAEHPAPBD@Z)
+gdalallregister.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall OGRSFDriver::~OGRSFDriver(void)" (??1OGRSFDriver@@UAE@XZ) referenced in function "public: virtual void * __thiscall OGRSFDriver::`vector deleting destructor'(unsigned int)" (??_EOGRSFDriver@@UAEPAXI@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual class OGRDataSource * __thiscall OGRSFDriver::CreateDataSource(char const *,char * *)" (?CreateDataSource@OGRSFDriver@@UAEPAVOGRDataSource@@PBDPAPAD@Z)
+gdalallregister.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall OGRSFDriver::DeleteDataSource(char const *)" (?DeleteDataSource@OGRSFDriver@@UAEHPBD@Z)
+gdalallregister.obj : error LNK2019: unresolved external symbol _OGRRegisterAllInternal referenced in function _GDALAllRegister@0
+cpl.lib(cpl_vsil_buffered_reader.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil_stdout.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil_tar.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_minizip_zip.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil_abstract_archive.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_recode_stub.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsi_mem.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil_stdin.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cplstringlist.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_minixml.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsil.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_path.obj) : error LNK2001: unresolved external symbol _CPLError
+memdataset.obj : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_vsisimple.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_conv.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_string.obj) : error LNK2001: unresolved external symbol _CPLError
+cpl.lib(cpl_conv.obj) : error LNK2019: unresolved external symbol _CPLEmergencyError referenced in function _CPLMalloc
+cpl.lib(cpl_multiproc.obj) : error LNK2001: unresolved external symbol _CPLEmergencyError
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_vsil_stdin.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_vsil_sparsefile.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_vsil_abstract_archive.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_conv.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_string.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_multiproc.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_vsi_mem.obj) : error LNK2001: unresolved external symbol _CPLDebug
+cpl.lib(cpl_string.obj) : error LNK2019: unresolved external symbol _CPLErrorReset@0 referenced in function _CSLLoad2
+cpl.lib(cpl_minixml.obj) : error LNK2001: unresolved external symbol _CPLErrorReset@0
+cpl.lib(cpl_minixml.obj) : error LNK2019: unresolved external symbol _CPLGetLastErrorType@0 referenced in function _CPLParseXMLString
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _deflate referenced in function "public: virtual int __thiscall VSIGZipWriteHandle::Close(void)" (?Close@VSIGZipWriteHandle@@UAEHXZ)
+cpl.lib(cpl_minizip_zip.obj) : error LNK2001: unresolved external symbol _deflate
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _deflateEnd referenced in function "public: virtual int __thiscall VSIGZipWriteHandle::Close(void)" (?Close@VSIGZipWriteHandle@@UAEHXZ)
+cpl.lib(cpl_minizip_zip.obj) : error LNK2001: unresolved external symbol _deflateEnd
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflate referenced in function "public: virtual unsigned int __thiscall VSIGZipHandle::Read(void *,unsigned int,unsigned int)" (?Read@VSIGZipHandle@@UAEIPAXII@Z)
+cpl.lib(cpl_minizip_unzip.obj) : error LNK2001: unresolved external symbol _inflate
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflateEnd referenced in function "public: virtual __thiscall VSIGZipHandle::~VSIGZipHandle(void)" (??1VSIGZipHandle@@UAE@XZ)
+cpl.lib(cpl_minizip_unzip.obj) : error LNK2001: unresolved external symbol _inflateEnd
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflateCopy referenced in function "public: class VSIGZipHandle * __thiscall VSIGZipHandle::Duplicate(void)" (?Duplicate@VSIGZipHandle@@QAEPAV1@XZ)
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflateReset referenced in function "public: virtual unsigned int __thiscall VSIGZipHandle::Read(void *,unsigned int,unsigned int)" (?Read@VSIGZipHandle@@UAEIPAXII@Z)
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _crc32 referenced in function "public: __thiscall VSIGZipHandle::VSIGZipHandle(class VSIVirtualHandle *,char const *,unsigned __int64,unsigned __int64,unsigned __int64,unsigned int,int)" (??0VSIGZipHandle@@QAE@PAVVSIVirtualHandle@@PBD_K22IH@Z)
+cpl.lib(cpl_minizip_zip.obj) : error LNK2001: unresolved external symbol _crc32
+cpl.lib(cpl_minizip_unzip.obj) : error LNK2001: unresolved external symbol _crc32
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _deflateInit_ referenced in function _CPLZLibDeflate
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflateInit_ referenced in function _CPLZLibInflate
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _deflateInit2_ referenced in function "public: __thiscall VSIGZipWriteHandle::VSIGZipWriteHandle(class VSIVirtualHandle *,int,int)" (??0VSIGZipWriteHandle@@QAE@PAVVSIVirtualHandle@@HH@Z)
+cpl.lib(cpl_minizip_zip.obj) : error LNK2001: unresolved external symbol _deflateInit2_
+cpl.lib(cpl_vsil_gzip.obj) : error LNK2019: unresolved external symbol _inflateInit2_ referenced in function "public: __thiscall VSIGZipHandle::VSIGZipHandle(class VSIVirtualHandle *,char const *,unsigned __int64,unsigned __int64,unsigned __int64,unsigned int,int)" (??0VSIGZipHandle@@QAE@PAVVSIVirtualHandle@@PBD_K22IH@Z)
+cpl.lib(cpl_minizip_unzip.obj) : error LNK2001: unresolved external symbol _inflateInit2_
+C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\GDAL\Debug\fmts.dll : fatal error LNK1120: 54 unresolved externals
