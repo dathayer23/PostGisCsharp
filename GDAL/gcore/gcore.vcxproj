@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1B58209-65A0-4407-8BF3-0FDC4A9C9690}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gcore</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\alg;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\frmts\gtiff;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\frmts\mem;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\frmts\vrt;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\ogr;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\ogr\ogrsf_frmts;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\ogr\ogrsf_frmts\generic;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\ogr\ogrsf_frmts\geojson;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\ogr\ogrsf_frmts\geojson\libjson;C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\port;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;GCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;GCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gcore\gdal.h" />
+    <ClInclude Include="..\..\gcore\gdalexif.h" />
+    <ClInclude Include="..\..\gcore\gdalgeorefpamdataset.h" />
+    <ClInclude Include="..\..\gcore\gdaljp2abstractdataset.h" />
+    <ClInclude Include="..\..\gcore\gdaljp2metadata.h" />
+    <ClInclude Include="..\..\gcore\gdaljp2metadatagenerator.h" />
+    <ClInclude Include="..\..\gcore\gdalsse_priv.h" />
+    <ClInclude Include="..\..\gcore\gdal_frmts.h" />
+    <ClInclude Include="..\..\gcore\gdal_mdreader.h" />
+    <ClInclude Include="..\..\gcore\gdal_pam.h" />
+    <ClInclude Include="..\..\gcore\gdal_priv.h" />
+    <ClInclude Include="..\..\gcore\gdal_proxy.h" />
+    <ClInclude Include="..\..\gcore\gdal_rat.h" />
+    <ClInclude Include="..\..\gcore\gdal_version.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gcore\gdalallvalidmaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalclientserver.cpp" />
+    <ClCompile Include="..\..\gcore\gdalcolortable.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldefaultasync.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldefaultoverviews.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldllmain.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldriver.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldrivermanager.cpp" />
+    <ClCompile Include="..\..\gcore\gdalexif.cpp" />
+    <ClCompile Include="..\..\gcore\gdalgeorefpamdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalgmlcoverage.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2abstractdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2box.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2metadata.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2metadatagenerator.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2structure.cpp" />
+    <ClCompile Include="..\..\gcore\gdalmajorobject.cpp" />
+    <ClCompile Include="..\..\gcore\gdalmultidomainmetadata.cpp" />
+    <ClCompile Include="..\..\gcore\gdalnodatamaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalnodatavaluesmaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalopeninfo.cpp" />
+    <ClCompile Include="..\..\gcore\gdaloverviewdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamproxydb.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamrasterband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalproxydataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalproxypool.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrasterband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrasterblock.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrescaledalphaband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalvirtualmem.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_mdreader.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_misc.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_rat.cpp" />
+    <ClCompile Include="..\..\gcore\overview.cpp" />
+    <ClCompile Include="..\..\gcore\rasterio.cpp" />
+    <ClCompile Include="gcore.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
