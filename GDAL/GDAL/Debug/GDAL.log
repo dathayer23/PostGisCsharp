@@ -1,0 +1,5 @@
+﻿  dllmain.cpp
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gdal\gdal\dllmain.cpp(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gdal\gdal\dllmain.cpp(4): error C2146: syntax error: missing ';' before identifier 'APIENTRY'
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gdal\gdal\dllmain.cpp(8): error C2143: syntax error: missing ';' before '{'
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gdal\gdal\dllmain.cpp(8): error C2447: '{': missing function header (old-style formal list?)
