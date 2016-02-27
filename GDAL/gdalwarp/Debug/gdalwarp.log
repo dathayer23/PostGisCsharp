@@ -1,0 +1,28 @@
+﻿  stdafx.cpp
+  gdalwarp.cpp
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\port\cpl_string.h(237): warning C4251: 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>::_Mypair': class 'std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>,std::_String_val<std::_Simple_types<char>>,true>' needs to have dll-interface to be used by clients of class 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gcore\gdal_priv.h(586): warning C4251: 'GDALColorTable::aoEntries': class 'std::vector<GDALColorEntry,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'GDALColorTable'
+          with
+          [
+              _Ty=GDALColorEntry
+          ]
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\gcore\gdal_priv.h(980): warning C4251: 'GDALDriverManager::oMapNameToDrivers': class 'std::map<CPLString,GDALDriver *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'GDALDriverManager'
+          with
+          [
+              _Kty=CPLString,
+              _Ty=GDALDriver *
+          ]
+  commonutils.cpp
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\port\cpl_string.h(237): warning C4251: 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>::_Mypair': class 'std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>,std::_String_val<std::_Simple_types<char>>,true>' needs to have dll-interface to be used by clients of class 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\GDAL\Debug\zlib.lib'
