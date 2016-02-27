@@ -28,7 +28,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
  /* Remove annoying warnings in eVC++ and VC++ 6.0 */
 #if defined(WIN32CE)
 #  pragma warning(disable:4786)

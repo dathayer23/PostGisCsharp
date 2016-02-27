@@ -39,7 +39,7 @@
  *
  */
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_minixml.h"
 #include "cpl_error.h"
 #include "cpl_conv.h"

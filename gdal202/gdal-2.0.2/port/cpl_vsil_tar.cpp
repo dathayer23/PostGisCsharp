@@ -27,8 +27,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_vsi_virtual.h"
 
 CPL_CVSID("$Id: cpl_vsil_tar.cpp 28588 2015-03-01 20:44:43Z rouault $");

@@ -27,7 +27,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_conv.h"
 #include "cpl_string.h"
 

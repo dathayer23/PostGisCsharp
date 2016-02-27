@@ -28,7 +28,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <map>
 #include "cpl_http.h"
 #include "cpl_multiproc.h"

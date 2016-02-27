@@ -31,7 +31,7 @@
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_virtualmem.h"
 #include "cpl_error.h"
 #include "cpl_multiproc.h"

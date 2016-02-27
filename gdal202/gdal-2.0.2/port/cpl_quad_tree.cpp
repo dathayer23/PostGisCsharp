@@ -32,7 +32,7 @@
  *
  */
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_conv.h"
 #include "cpl_quad_tree.h"
 

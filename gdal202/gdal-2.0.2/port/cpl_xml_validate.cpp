@@ -27,7 +27,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_conv.h"
 
 CPL_CVSID("$Id: cpl_xml_validate.cpp 27755 2014-09-28 16:51:08Z goatbar $");

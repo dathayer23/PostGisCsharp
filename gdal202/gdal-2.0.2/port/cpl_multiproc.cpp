@@ -28,7 +28,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif

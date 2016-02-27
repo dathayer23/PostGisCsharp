@@ -75,7 +75,7 @@
 */
 
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_vsi_virtual.h"
 #include "cpl_string.h"
 #include "cpl_multiproc.h"

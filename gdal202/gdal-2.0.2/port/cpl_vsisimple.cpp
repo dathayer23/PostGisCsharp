@@ -35,7 +35,7 @@
  *
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_config.h"
 #include "cpl_port.h"
 #include "cpl_vsi.h"

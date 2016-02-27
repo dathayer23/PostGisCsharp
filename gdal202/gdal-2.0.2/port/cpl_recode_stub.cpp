@@ -30,7 +30,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  **********************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_string.h"
 
 CPL_CVSID("$Id: cpl_recode_stub.cpp 29121 2015-05-02 22:53:48Z rouault $");

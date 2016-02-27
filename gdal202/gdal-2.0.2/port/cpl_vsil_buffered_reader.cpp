@@ -32,7 +32,7 @@
 /* seek of a few bytes doesn't require a seek on the underlying virtual handle. */
 /* This enable us to improve dramatically the performance of CPLReadLine2L() on */
 /* a gzip file */
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_vsi_virtual.h"
 
 #include "cpl_port.h"

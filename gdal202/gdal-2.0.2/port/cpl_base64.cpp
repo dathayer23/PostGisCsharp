@@ -34,7 +34,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_string.h"
 
 CPL_CVSID("$Id: cpl_base64.cpp 27044 2014-03-16 23:41:27Z rouault $");

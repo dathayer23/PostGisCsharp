@@ -36,6 +36,7 @@
 
 #include "ogr_geometry.h"
 #include "ogr_p.h"
+#include "gdal_priv.h"
 
 #ifdef OGR_ENABLED
 # include "ogrsf_frmts.h"

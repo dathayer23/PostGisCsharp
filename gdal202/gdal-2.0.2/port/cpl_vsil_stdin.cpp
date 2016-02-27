@@ -27,7 +27,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_port.h"
 #include "cpl_error.h"
 #include "cpl_vsi_virtual.h"

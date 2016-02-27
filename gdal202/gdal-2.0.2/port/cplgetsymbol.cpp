@@ -28,7 +28,7 @@
  * DEALINGS IN THE SOFTWARE.
  ****************************************************************************/
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_conv.h"
 
 CPL_CVSID("$Id: cplgetsymbol.cpp 27460 2014-06-18 12:36:06Z rouault $");

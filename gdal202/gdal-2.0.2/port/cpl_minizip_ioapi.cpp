@@ -18,7 +18,7 @@
    Copyright (C) 1998-2005 Gilles Vollant
 */
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_vsi.h"
 
 #include <stdio.h>

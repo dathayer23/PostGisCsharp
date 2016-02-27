@@ -47,7 +47,7 @@
  **********************************************************************/
 
 #undef WARN_STANDARD_PRINTF
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "cpl_string.h"
 #include "cpl_vsi.h"
 #include "cpl_multiproc.h"
