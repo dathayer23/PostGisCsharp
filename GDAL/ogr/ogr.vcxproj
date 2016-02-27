@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{48DAEB10-BE59-481A-85F8-259CADC9D7C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ogr</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\..\gcore;$(ProjectDir)\..\..\port;$(ProjectDir)\..\..\ogr\ogrsf_frmts\zlib;$(ProjectDir)\..\..\ogr\ogrsf_frmts\gtiff\libgeotiff;$(ProjectDir)\..\..\ogr\ogrsf_frmts;$(ProjectDir)\..\..\ogr\ogrsf_frmts\mem;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GDAL_COMPILATION;WIN32;_DEBUG;_WINDOWS;_USRDLL;OGR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;OGR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OGR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;OGR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ogr\ograpispy.h" />
+    <ClInclude Include="..\..\ogr\ogrgeomediageometry.h" />
+    <ClInclude Include="..\..\ogr\ogrpgeogeometry.h" />
+    <ClInclude Include="..\..\ogr\ogr_api.h" />
+    <ClInclude Include="..\..\ogr\ogr_core.h" />
+    <ClInclude Include="..\..\ogr\ogr_expat.h" />
+    <ClInclude Include="..\..\ogr\ogr_feature.h" />
+    <ClInclude Include="..\..\ogr\ogr_featurestyle.h" />
+    <ClInclude Include="..\..\ogr\ogr_geocoding.h" />
+    <ClInclude Include="..\..\ogr\ogr_geometry.h" />
+    <ClInclude Include="..\..\ogr\ogr_geos.h" />
+    <ClInclude Include="..\..\ogr\ogr_p.h" />
+    <ClInclude Include="..\..\ogr\ogr_spatialref.h" />
+    <ClInclude Include="..\..\ogr\ogr_srs_api.h" />
+    <ClInclude Include="..\..\ogr\ogr_srs_esri_names.h" />
+    <ClInclude Include="..\..\ogr\osr_cs_wkt.h" />
+    <ClInclude Include="..\..\ogr\osr_cs_wkt_parser.h" />
+    <ClInclude Include="..\..\ogr\swq.h" />
+    <ClInclude Include="..\..\ogr\swq_parser.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ogr\gml2ogrgeometry.cpp" />
+    <ClCompile Include="..\..\ogr\ogr2gmlgeometry.cpp" />
+    <ClCompile Include="..\..\ogr\ograpispy.cpp" />
+    <ClCompile Include="..\..\ogr\ograssemblepolygon.cpp" />
+    <ClCompile Include="..\..\ogr\ogrcircularstring.cpp" />
+    <ClCompile Include="..\..\ogr\ogrcompoundcurve.cpp" />
+    <ClCompile Include="..\..\ogr\ogrct.cpp" />
+    <ClCompile Include="..\..\ogr\ogrcurve.cpp" />
+    <ClCompile Include="..\..\ogr\ogrcurvecollection.cpp" />
+    <ClCompile Include="..\..\ogr\ogrcurvepolygon.cpp" />
+    <ClCompile Include="..\..\ogr\ogrfeature.cpp" />
+    <ClCompile Include="..\..\ogr\ogrfeaturedefn.cpp" />
+    <ClCompile Include="..\..\ogr\ogrfeaturequery.cpp" />
+    <ClCompile Include="..\..\ogr\ogrfeaturestyle.cpp" />
+    <ClCompile Include="..\..\ogr\ogrfielddefn.cpp" />
+    <ClCompile Include="..\..\ogr\ogrgeomediageometry.cpp" />
+    <ClCompile Include="..\..\ogr\ogrgeometry.cpp" />
+    <ClCompile Include="..\..\ogr\ogrgeometrycollection.cpp" />
+    <ClCompile Include="..\..\ogr\ogrgeometryfactory.cpp" />
+    <ClCompile Include="..\..\ogr\ogrgeomfielddefn.cpp" />
+    <ClCompile Include="..\..\ogr\ogrlinearring.cpp" />
+    <ClCompile Include="..\..\ogr\ogrlinestring.cpp" />
+    <ClCompile Include="..\..\ogr\ogrmulticurve.cpp" />
+    <ClCompile Include="..\..\ogr\ogrmultilinestring.cpp" />
+    <ClCompile Include="..\..\ogr\ogrmultipoint.cpp" />
+    <ClCompile Include="..\..\ogr\ogrmultipolygon.cpp" />
+    <ClCompile Include="..\..\ogr\ogrmultisurface.cpp" />
+    <ClCompile Include="..\..\ogr\ogrpgeogeometry.cpp" />
+    <ClCompile Include="..\..\ogr\ogrpoint.cpp" />
+    <ClCompile Include="..\..\ogr\ogrpolygon.cpp" />
+    <ClCompile Include="..\..\ogr\ogrspatialreference.cpp" />
+    <ClCompile Include="..\..\ogr\ogrsurface.cpp" />
+    <ClCompile Include="..\..\ogr\ogrutils.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_api.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_expat.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_fromepsg.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_geocoding.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_opt.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srsnode.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_dict.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_erm.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_esri.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_ozi.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_panorama.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_pci.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_proj4.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_usgs.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_validate.cpp" />
+    <ClCompile Include="..\..\ogr\ogr_srs_xml.cpp" />
+    <ClCompile Include="..\..\ogr\osr_cs_wkt.c" />
+    <ClCompile Include="..\..\ogr\osr_cs_wkt_parser.c" />
+    <ClCompile Include="..\..\ogr\swq.cpp" />
+    <ClCompile Include="..\..\ogr\swq_expr_node.cpp" />
+    <ClCompile Include="..\..\ogr\swq_op_general.cpp" />
+    <ClCompile Include="..\..\ogr\swq_op_registrar.cpp" />
+    <ClCompile Include="..\..\ogr\swq_parser.cpp" />
+    <ClCompile Include="..\..\ogr\swq_select.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ogr.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
