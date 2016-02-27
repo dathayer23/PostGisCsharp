@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18A4FFAB-27C1-497C-A180-E46274EE4DC0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cpl</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\..\..\frmts\zlib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>HAVE_LIBZ;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\port\cplgetsymbol.cpp" />
+    <ClCompile Include="..\..\port\cplstring.cpp" />
+    <ClCompile Include="..\..\port\cplstringlist.cpp" />
+    <ClCompile Include="..\..\port\cpl_atomic_ops.cpp" />
+    <ClCompile Include="..\..\port\cpl_base64.cpp" />
+    <ClCompile Include="..\..\port\cpl_conv.cpp" />
+    <ClCompile Include="..\..\port\cpl_findfile.cpp" />
+    <ClCompile Include="..\..\port\cpl_getexecpath.cpp" />
+    <ClCompile Include="..\..\port\cpl_google_oauth2.cpp" />
+    <ClCompile Include="..\..\port\cpl_hash_set.cpp" />
+    <ClCompile Include="..\..\port\cpl_http.cpp" />
+    <ClCompile Include="..\..\port\cpl_list.cpp" />
+    <ClCompile Include="..\..\port\cpl_minixml.cpp" />
+    <ClCompile Include="..\..\port\cpl_minizip_ioapi.cpp" />
+    <ClCompile Include="..\..\port\cpl_minizip_unzip.cpp" />
+    <ClCompile Include="..\..\port\cpl_minizip_zip.cpp" />
+    <ClCompile Include="..\..\port\cpl_multiproc.cpp" />
+    <ClCompile Include="..\..\port\cpl_path.cpp" />
+    <ClCompile Include="..\..\port\cpl_progress.cpp" />
+    <ClCompile Include="..\..\port\cpl_quad_tree.cpp" />
+    <ClCompile Include="..\..\port\cpl_recode.cpp" />
+    <ClCompile Include="..\..\port\cpl_recode_iconv.cpp" />
+    <ClCompile Include="..\..\port\cpl_recode_stub.cpp" />
+    <ClCompile Include="..\..\port\cpl_spawn.cpp" />
+    <ClCompile Include="..\..\port\cpl_string.cpp" />
+    <ClCompile Include="..\..\port\cpl_strtod.cpp" />
+    <ClCompile Include="..\..\port\cpl_time.cpp" />
+    <ClCompile Include="..\..\port\cpl_virtualmem.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_abstract_archive.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_buffered_reader.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_cache.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_curl.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_curl_streaming.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_gzip.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_sparsefile.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_stdin.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_stdout.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_subfile.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_tar.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsil_win32.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsisimple.cpp" />
+    <ClCompile Include="..\..\port\cpl_vsi_mem.cpp" />
+    <ClCompile Include="..\..\port\cpl_xml_validate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\port\cplkeywordparser.h" />
+    <ClInclude Include="..\..\port\cpl_conv.h" />
+    <ClInclude Include="..\..\port\cpl_csv.h" />
+    <ClInclude Include="..\..\port\cpl_error.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

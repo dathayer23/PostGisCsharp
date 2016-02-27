@@ -1,0 +1,11 @@
+﻿  cpl_conv.cpp
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\port\cpl_string.h(237): warning C4251: 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>::_Mypair': class 'std::_Compressed_pair<std::_Wrap_alloc<std::allocator<char>>,std::_String_val<std::_Simple_types<char>>,true>' needs to have dll-interface to be used by clients of class 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\port\cpl_conv.cpp(2699): warning C4005: 'HAVE_LIBZ': macro redefinition
+  c:\wedev\postgiscsharp\gdal202\gdal-2.0.2\port\cpl_conv.cpp(2699): note: command-line arguments:  see previous definition of 'HAVE_LIBZ'
+cpl_recode_iconv.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  cpl.vcxproj -> C:\wedev\PostGisCsharp\gdal202\gdal-2.0.2\GDAL\Debug\cpl.lib
